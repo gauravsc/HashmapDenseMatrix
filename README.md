@@ -4,12 +4,10 @@ HashmapDenseMatrix
 A lightweight library for dense matrix manipulation, dense matrix is implemented based on java hashmaps. It provides some basic operations like addition, subtraction and average calculation.
 
 
-An Example Code:
-================
+#### An Example Code:
+```
 
-
-public static void main( String args[]){
-	
+public static void main( String args[]){	
 	long abc[][]={{1,2,3},{2,3,4}};
 	long def[][]={{1,2,3},{2,3}};
 	HashmapDenseMatrix matrix=new HashmapDenseMatrix(abc);
@@ -25,10 +23,10 @@ public static void main( String args[]){
 	}
 	
 }
+```
 
-Available functions:
-====================
-
+#### Available functions:
+```
 public HashmapDenseMatrix  getAverageofMatrix(HashmapDenseMatrix matrix_to_add)
 
 public HashmapDenseMatrix addMatrix(HashmapDenseMatrix matrix_to_add)
@@ -36,3 +34,4 @@ public HashmapDenseMatrix addMatrix(HashmapDenseMatrix matrix_to_add)
 public HashmapDenseMatrix subtractMatrix(HashmapDenseMatrix matrix_to_subtract)
 
 public int[][] getXYValues()
+```
