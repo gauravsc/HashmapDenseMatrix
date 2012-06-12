@@ -26,7 +26,7 @@ public class HashmapDenseMatrix {
 		return this.hashmapmatrix.get(new Pair(i,j));
 	}
 	
-	private int[][] getXYValues(){
+	public int[][] getXYValues(){
 		Set<Pair> all_values=this.hashmapmatrix.keySet();
 		System.out.println("all_value_size="+all_values.size());
 		int temp_values[][]=new int[all_values.size()][2];
@@ -123,7 +123,7 @@ public static void main( String args[]){
 	HashmapDenseMatrix matrix_temp=new HashmapDenseMatrix(def);
 	
 	
-	matrix=matrix.addMatrix(matrix_temp);
+	matrix=matrix_temp.subtractMatrix(matrix);
 	int coordinates[][]=matrix.getXYValues();
 
 	for(int i=0;i<coordinates.length;i++){
