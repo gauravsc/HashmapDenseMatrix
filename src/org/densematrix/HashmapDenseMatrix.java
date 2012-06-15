@@ -26,6 +26,11 @@ public class HashmapDenseMatrix {
 		return this.hashmapmatrix.get(new Pair(i,j));
 	}
 	
+	public void setValueatXY(int x, int y, long value){
+		Pair temp=new Pair(x,y);
+		this.hashmapmatrix.put(temp, value);
+	}
+	
 	public int[][] getXYValues(){
 		Set<Pair> all_values=this.hashmapmatrix.keySet();
 		System.out.println("all_value_size="+all_values.size());
